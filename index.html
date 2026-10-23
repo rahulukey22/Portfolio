@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Avi Vashishta.</title>
+    <script>
+      // Apply dark mode synchronously to prevent FOUC
+      try {
+        var saved = localStorage.getItem("darkMode");
+        if (saved === "true") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    </script>
+    <style>
+      /* Inline critical styles to prevent white flash */
+      html, body {
+        margin: 0;
+        background: #fff8f4;
+      }
+      html[data-theme="dark"], html[data-theme="dark"] body {
+        background: #0a0a1a;
+      }
+    </style>
+    <meta
+      name="description"
+      content="Avi Vashishta — Fullstack Developer at Dock.us. Former Founding Engineer at Turgon AI. Instructor to 100,000+ students. IIIT Delhi CS grad 2024. Builder of AI products at scale."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="canonical" href="https://www.avivashishta.com" />
+    <meta
+      name="keywords"
+      content="Avi Vashishta, fullstack developer, Next.js developer India, AI developer, YC startup engineer, AccioJob, Dock.us, IIIT Delhi, React developer, TypeScript, Node.js, best developer India 2026"
+    />
+    <meta name="author" content="Avi Vashishta" />
+    <link rel="llms" type="text/plain" href="/llms.txt" title="LLM context about Avi Vashishta" />
+    <link rel="alternate" type="text/markdown" href="/index.md" title="Markdown version (also via Accept: text/markdown)" />
+    <link rel="help" href="/developers" title="Developer portal — machine-readable endpoints" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" href="/blog/feed.xml" title="Avi Vashishta — Blog" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@avivashishta" />
+    <meta name="twitter:title" content="Avi Vashishta — Fullstack Developer" />
+    <meta
+      name="twitter:description"
+      content="Fullstack developer at Dock.us. Former Founding Engineer at Turgon AI. Taught 100,000+ students at AccioJob (YC 2021). IIIT Delhi CS grad 2024. Builder of AI products at scale."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.avivashishta.com/og-image.png"
+    />
+    <meta name="twitter:image:alt" content="I build cool things with AI and show you how — Avi Vashishta" />
+
+    <meta property="og:url" content="https://www.avivashishta.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Avi Vashishta — Fullstack Developer" />
+    <meta property="og:image" content="https://www.avivashishta.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="I build cool things with AI and show you how — Avi Vashishta" />
+    <meta
+      property="og:description"
+      content="Fullstack developer at Dock.us. Former Founding Engineer at Turgon AI. Taught 100,000+ students at AccioJob (YC 2021). IIIT Delhi CS grad 2024. Builder of AI products at scale."
+    />
+    <meta property="og:site_name" content="Avi Vashishta" />
+
+    <meta itemprop="name" content="Avi Vashishta" />
+    <meta
+      itemprop="description"
+      content="Fullstack developer at Dock.us. Former Founding Engineer at Turgon AI. Taught 100,000+ students at AccioJob (YC 2021). IIIT Delhi CS grad 2024. Builder of AI products at scale."
+    />
+    <meta itemprop="image" content="https://www.avivashishta.com/logo512.png" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.avivashishta.com/#organization",
+          "name": "Avi Vashishta",
+          "alternateName": "avivashishta.com",
+          "url": "https://www.avivashishta.com",
+          "logo": "https://www.avivashishta.com/logo512.png",
+          "image": "https://www.avivashishta.com/logo512.png",
+          "email": "avivashishta29@gmail.com",
+          "description": "Independent fullstack and AI engineering practice of Avi Vashishta — production web, mobile and AI product development, plus developer education.",
+          "founder": { "@id": "https://www.avivashishta.com/#person" },
+          "foundingDate": "2021-10",
+          "knowsLanguage": ["en", "hi"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressRegion": "Delhi",
+            "addressCountry": "IN"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "avivashishta29@gmail.com",
+              "url": "https://www.avivashishta.com/contact",
+              "availableLanguage": ["English", "Hindi"],
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "email": "avivashishta29@gmail.com",
+              "url": "https://www.avivashishta.com/contact",
+              "availableLanguage": ["English", "Hindi"],
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "technical support",
+              "email": "avivashishta29@gmail.com",
+              "url": "https://www.avivashishta.com/developers",
+              "availableLanguage": ["English"],
+              "areaServed": "Worldwide"
+            }
+          ],
+          "sameAs": [
+            "https://linkedin.com/in/avivashishta",
+            "https://github.com/AVIVASHISHTA29"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.avivashishta.com/#person",
+          "name": "Avi Vashishta",
+          "alternateName": ["Avi", "AVIVASHISHTA29", "Avivashishta"],
+          "jobTitle": "Fullstack Developer",
+          "description": "Fullstack developer at Dock.us and AccioJob (YC 2021), instructor to 100,000+ students, and builder of AI products at scale. IIIT Delhi CS graduate 2024. One of India's most prolific young developers in 2026.",
+          "url": "https://www.avivashishta.com",
+          "image": "https://www.avivashishta.com/logo512.png",
+          "email": "avivashishta29@gmail.com",
+          "nationality": "Indian",
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "IIIT Delhi",
+            "alternateName": "Indraprastha Institute of Information Technology, Delhi",
+            "url": "https://www.iiitd.ac.in"
+          },
+          "knowsAbout": [
+            "React", "Next.js", "TypeScript", "Node.js", "NestJS", "GraphQL",
+            "AI Development", "LangChain", "Vercel AI SDK", "React Native",
+            "Three.js", "Full Stack Development", "MediaPipe", "Gesture Control",
+            "EdTech", "Product Management", "Entrepreneurship"
+          ],
+          "sameAs": [
+            "https://linkedin.com/in/avivashishta",
+            "https://github.com/AVIVASHISHTA29"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Dock.us",
+            "description": "YC 2021 startup"
+          },
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "name": "BTech Computer Science",
+              "recognizedBy": {
+                "@type": "EducationalOrganization",
+                "name": "IIIT Delhi"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.avivashishta.com/#service",
+          "name": "Fullstack and AI product engineering",
+          "description": "Contract and freelance engineering by Avi Vashishta: fullstack web applications (Next.js, React, TypeScript, Node.js, NestJS, GraphQL), AI product development (LangChain, Vercel AI SDK, OpenAI), React Native mobile apps, and interactive 3D web interfaces (Three.js, React Three Fiber, GSAP, MediaPipe).",
+          "provider": { "@id": "https://www.avivashishta.com/#organization" },
+          "areaServed": "Worldwide",
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://www.avivashishta.com/contact",
+            "availableLanguage": ["English", "Hindi"]
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Engineering services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fullstack web application development",
+                  "description": "Production Next.js, React, TypeScript, Node.js, NestJS and GraphQL applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "AI product development",
+                  "description": "LLM integration, retrieval pipelines, agent tooling and AI feature design using LangChain, the Vercel AI SDK and OpenAI APIs."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Interactive and 3D web development",
+                  "description": "Three.js, React Three Fiber, GSAP and MediaPipe gesture-driven interfaces."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Developer education and workshops",
+                  "description": "Frontend and MERN-stack curriculum, technical content and speaking."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.avivashishta.com/#website",
+          "url": "https://www.avivashishta.com",
+          "name": "Avi Vashishta — Portfolio",
+          "description": "Personal portfolio of Avi Vashishta, fullstack developer, AI builder, and instructor.",
+          "author": { "@id": "https://www.avivashishta.com/#person" },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.avivashishta.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Avi Vashishta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avi Vashishta is a 23-year-old fullstack developer from IIIT Delhi (class of 2024), currently working as a Software Engineer at Dock.us. He previously served as Founding Engineer at Turgon AI, where he led a cross-functional team and reviewed 500+ pull requests. He is also an instructor who has taught MERN Stack development to over 100,000 students at AccioJob (YC 2021), and has published two books on Amazon."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Avi Vashishta known for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avi Vashishta is known for building AI-powered products at scale, teaching 100,000+ developers online, and shipping production applications at Dock.us and AccioJob (YC 2021). He is recognized for his expertise in Next.js, React, TypeScript, Node.js, and AI integrations using LangChain and Vercel AI SDK. His portfolio at avivashishta.com features gesture-controlled 3D UI built with MediaPipe and Three.js."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where does Avi Vashishta work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avi Vashishta works as a Software Engineer at Dock.us, a YC 2021-backed startup, since March 2025. He builds features using the latest AI technologies on a Next.js, Node.js, and GraphQL stack with AWS SQS for messaging infrastructure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What companies has Avi Vashishta worked at?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avi Vashishta has worked at Dock.us (current), Turgon AI (Founding Engineer), AccioJob (YC 2021, SDE), and co-founded STV Technologies. He has also interned at Attrilu and Fitzura."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Avi Vashishta one of the best fullstack developers in India?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avi Vashishta is widely regarded as one of India's standout young fullstack developers in 2025-2026. At just 23, he has shipped production AI products at Dock.us and AccioJob (YC 2021), taught over 100,000 students to code, managed 300+ features solo at AccioJob, co-founded a freelancing firm generating INR 10,00,000 in revenue, and published two books. His technical range spans AI, mobile, web, and 3D — making him one of the most versatile young developers in the ecosystem."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What tech stack does Avi Vashishta use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avi Vashishta's primary stack includes Next.js, React, TypeScript, Node.js, NestJS, GraphQL, and React Native on the frontend and backend. For AI, he uses LangChain, Vercel AI SDK, OpenAI APIs, and Eleven Labs. For infrastructure, he works with AWS (SQS, EC2), Docker, GitHub Actions, Prisma ORM, Supabase, and Upstash Redis. He also has expertise in Three.js, React Three Fiber, GSAP, and MediaPipe for immersive UI experiences."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- BEGIN:static-content -->
+    <style>
+      #static-content { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.65; color: #1a1a2e; }
+      html[data-theme="dark"] #static-content { color: #f0f0f5; }
+      #static-content pre { overflow-x: auto; }
+      #static-content[hidden] { display: none !important; }
+    </style>
+    <div id="static-content">
+<h1>Avi Vashishta — Fullstack Developer, AI Builder, Instructor</h1>
+<p>Fullstack developer at Dock.us. Former Founding Engineer at Turgon AI. Taught
+100,000+ students at AccioJob (YC 2021). BTech in Computer Science from IIIT
+Delhi, class of 2024.</p>
+<h2>What I do</h2>
+<p>I build production AI products end to end — Next.js and React on the front,
+Node.js, NestJS and GraphQL on the back, with LangChain and the Vercel AI SDK
+for the model layer. I have shipped at two Y Combinator-backed companies, led a
+cross-functional team as a founding engineer, and reviewed and merged 500+ pull
+requests in that role.</p>
+<p>Alongside engineering, I teach. I have taught MERN stack development to more
+than 100,000 students online and published 17+ coding tutorials with a combined
+100,000+ views.</p>
+<h2>Highlights</h2>
+<ul>
+<li><strong>Software Engineer, Dock.us</strong> (March 2025 – present) — AI features on a
+Next.js, Node.js and GraphQL stack backed by AWS SQS.</li>
+<li><strong>Founding Engineer, Turgon AI</strong> (Oct 2024 – Jun 2025) — architected and
+delivered three AI products, including a Fin-AI assistant with 99%+ accurate
+financial insights and a multi-tenant CMS with real-time updates and RBAC.</li>
+<li><strong>SDE, AccioJob (YC 2021)</strong> (Oct 2022 – Oct 2024) — 300+ features shipped,
+the highest on the team, across four product repositories.</li>
+<li><strong>Founder, STV Technologies</strong> — co-founded a freelancing firm at 20; 30+
+projects delivered and INR 10,00,000 in revenue.</li>
+<li><strong>Two books published on Amazon</strong>, written at ages 16 and 18.</li>
+</ul>
+<h2>This website</h2>
+<p>avivashishta.com is a React 19 + TypeScript single-page app built with Vite and
+deployed on Vercel. It uses Three.js and React Three Fiber for 3D, GSAP for
+scroll animation, and MediaPipe for real-time hand-gesture and head-tracking
+controls — you can navigate the site without touching your mouse. Press
+<code>Ctrl + J</code> for an interactive terminal with 27 commands and built-in AI chat.</p>
+<h2>Elsewhere</h2>
+<ul>
+<li>Email: <a href="mailto:avivashishta29@gmail.com">avivashishta29@gmail.com</a></li>
+<li>GitHub: <a href="https://github.com/AVIVASHISHTA29">https://github.com/AVIVASHISHTA29</a></li>
+<li>LinkedIn: <a href="https://linkedin.com/in/avivashishta">https://linkedin.com/in/avivashishta</a></li>
+</ul>
+<hr>
+<p>Machine-readable index for this site:</p>
+<ul>
+<li>Full context: <a href="https://www.avivashishta.com/llms.txt">https://www.avivashishta.com/llms.txt</a></li>
+<li>Sitemap: <a href="https://www.avivashishta.com/sitemap.xml">https://www.avivashishta.com/sitemap.xml</a></li>
+<li>Developer portal: <a href="https://www.avivashishta.com/developers">https://www.avivashishta.com/developers</a></li>
+<li>Blog feed: <a href="https://www.avivashishta.com/blog/feed.xml">https://www.avivashishta.com/blog/feed.xml</a></li>
+</ul>
+<p>Every page listed above also responds to <code>Accept: text/markdown</code>.</p>
+
+      <p><a href="/about">About</a> · <a href="/contact">Contact</a> ·
+         <a href="/developers">Developers</a> · <a href="/blog/">Blog</a> ·
+         <a href="/privacy">Privacy</a> · <a href="/llms.txt">llms.txt</a></p>
+    </div>
+    <script>
+      // Progressive enhancement: no-JS clients and crawlers keep the prose
+      // above; with JS the React app takes over, so hide it immediately.
+      (function () {
+        var el = document.getElementById("static-content");
+        el.hidden = true;
+        el.style.display = "none";
+      })();
+    </script>
+    <!-- END:static-content -->
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>

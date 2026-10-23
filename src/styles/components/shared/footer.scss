@@ -1,0 +1,63 @@
+.footer {
+  background-color: rgba($black, 0.9);
+  padding: 12px 36px;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  .links {
+    display: flex;
+    gap: 12px;
+
+    a {
+      text-decoration: none;
+      color: $text-grey;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s;
+      padding: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1e1e1e;
+        padding: 2px 20px;
+        border-radius: 24px;
+        color: $white;
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .footer {
+    background-color: rgba($white, 0.9);
+
+    .links {
+      a {
+        color: rgba($black, 0.5);
+        &:hover {
+          background-color: rgba($black, 0.08);
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 12px 24px;
+
+    .links {
+      gap: 12px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
